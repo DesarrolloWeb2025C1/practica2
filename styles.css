@@ -1,0 +1,199 @@
+
+body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #bbdefb;
+}
+
+.navbar-blanco {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px; /* aumenta el tamaño del header*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #cccccc;/* cambia el color de la linea entre el header y el navbar*/
+}
+.navbar-blanco .logo { height: 40px; margin-left: 20px; } /* cambia tamaño y dirección del logo desarrollo web*/
+.navbar-blanco .logo-unpaz { height: 40px; margin-right: 20px; } /* cambia tamaño y dirección del logo UNPAZ */
+
+
+.navbar-celeste .menu {
+  list-style: none;   /* saca los puntos de la lista */
+  margin: 0;
+  padding: 0;
+  display: flex;      /* pone los <li> en fila */
+  justify-content: center;
+  gap: 20px;          /* espacio entre elementos */
+}
+
+.navbar-celeste .menu li {
+  font-size: 18px;    /* tamaño del texto */
+  color: hsl(219, 100%, 32%);     /* color del texto */
+  font-weight: bold;  /* opcional: negrita */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navbar-celeste .menu li:hover {
+  color: #008cc4;     /* cambia de color al pasar el mouse */
+}
+
+
+
+
+.navbar-celeste {
+    background-color: #2980B9; /* cambia el color de fondo en el header*/
+    color: #ffffff;
+    padding: 10px; /* cambia el tamaño del navbar*/
+    text-align: center;
+}
+.navbar-celeste .menu {
+    list-style: none;
+    padding: 0; margin: 0;
+    display: flex; justify-content: center;
+    font-weight: bold;  /* opcional: aplica negrita en el texto */
+
+}
+.navbar-celeste .menu li {
+    display: inline; margin: 0 70px; cursor: pointer; color: #ffffff; /* cambia el espaciado y color del texto del menu nabvar*/
+}
+
+
+.container {
+    display: flex;
+    background-color: #bbd5fb;/* cambia el color de fondo en el */
+    padding: 20px 0 0 0; /* padding-top igual al alto del header */
+    gap: 2%;
+    height: calc(100vh - 80px - 40px); 
+    box-sizing: border-box;
+}
+
+
+.sidebar {
+    flex: 0 0 28%;
+    background-color: #e3f2fd;/* cambia el color de fondo en la barra izquierda donde se muestra la informacon de contacto*/
+    padding: 1vw 1vw;
+    text-align: center;
+    border-right: 1px solid #000000; /* cambia el color de la linea divisora entre el slide bar (barra que tiene la info de contacto y el body (donde esta la foto texto etc*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 100%; /* define el alto del slidebar*/
+    min-height: 0;
+}
+
+.main-content {
+    flex: 0 0 24%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw;
+}
+.main-content img {
+    width: 100%; /* cambia el tamaño de la foto*/
+    max-width: 300px;
+  
+    height: auto;
+    display: block;
+}
+
+.text-content {
+    flex: 0 1 44%;
+    max-width: 640px;
+    min-width: 320px;
+    display: flex;              
+    flex-direction: column;       
+    justify-content: center;     
+    align-items: flex-start;      
+    padding: vw;
+    margin-bottom: 0%;
+    text-align: left;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+    height: 100%;                 
+}
+.text-content p {
+    margin: 0 0 12px 0;         
+}
+li { 
+    font-size: 16px; /* cambia el tamaño de la letra de los items de la lista*/
+    color: #8a0000; /* cambia el color de la letra de los items de la lista*/
+}
+p {
+    font-size: 16px; /* cambia el tamaño de la letra del texto*/
+}
+
+.footer {
+    background-color: #1565c0; /* cambia el color del pie de pagina (footer)*/
+    color: #ffffff;
+    text-align: center;
+    padding: 10px; /* cambia el tamaño del footer*/
+    position: fixed;
+    bottom: 0;
+    width: 100%; /* cambia el tamañohorizontal*/
+    left: 0;
+}
+.contact-form {
+    background-color: #f4f4f4; /* Fondo suave gris claro */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.copy {
+    color: #ffffff; /* Cambia el color del texto "Contacto" en el footer*/
+    text-align: center;
+    margin-bottom: 10px;
+}
+.contact-form h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #007BFF; /* Azul de enfoque */
+}
+
+.contact-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2787ee; /* Azul */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+}
+
